@@ -1,0 +1,8 @@
+on load:
+    set {_latest} to text from "https://pastebin.com/raw/Hg70Pi8q"
+
+on join:
+    if player has permission "utils.update":  
+        if {_latest} is not 1.0:
+            send "&cUtils.sk is outdated! Click <link:>&n&lHERE"
+        
